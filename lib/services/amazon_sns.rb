@@ -2,7 +2,7 @@ require 'aws/sns'
 require 'aws/sqs'
 
 class Service::AmazonSNS < Service
-  string :aws_key, :aws_secret, :sns_topic, :sqs_queue
+  string :aws_key, :sns_topic, :sqs_queue
   white_list :aws_key, :sns_topic, :sqs_queue
   password :aws_secret
 
